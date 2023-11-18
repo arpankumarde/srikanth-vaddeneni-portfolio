@@ -8,7 +8,7 @@ const Hero = () => {
     <section className="p-2" id="hero">
       <span className="text-5xl sm:text-6xl hidden sm:block">
         Hi, I'm
-        <span className="text-white">
+        <span className="text-black">
           <Typical
             steps={[` ${bio.name}`, 5000, ` a ${bio.role}`, 2500]}
             wrapper="span"

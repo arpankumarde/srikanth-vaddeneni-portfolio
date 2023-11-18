@@ -14,11 +14,10 @@ import {
 function App() {
   return (
     <React.Fragment>
-      <div className="flex flex-col sm:flex-row h-screen bg-rich-black font-poppins w-full p-2 gap-2 text-base">
-        {/**https://coolors.co/011627-e86a92-ffffff-f79d65-ffba08 */}
-        <div className="w-full sm:w-[82%] overflow-y-scroll scrollbar-hide px-2 sm:px-10 text-gray-300">
+      <div className="flex flex-col sm:flex-row h-screen bg-gray-blue font-poppins w-full md:p-2 gap-2 text-base">
+        <div className="w-full sm:w-[82%] overflow-y-scroll scrollbar-hide px-2 sm:px-10 text-gray-500">
           <Navbar />
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col gap-6">
             <Hero />
             <About />
             <Work />

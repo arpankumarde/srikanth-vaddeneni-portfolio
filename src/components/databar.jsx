@@ -13,7 +13,7 @@ import { GoLocation } from "react-icons/go";
 const Databar = ({ customClass }) => {
   return (
     <aside
-      className={`${customClass} flex-col gap-4 items-center justify-center sm:justify-between sm:pl-2 sm:border-l-2 border-selective-yellow text-gray-200`}
+      className={`${customClass} flex-col gap-4 items-center justify-center sm:justify-between sm:pl-2 sm:border-l-2 border-azure-blue text-gray-600`}
     >
       <div className="flex flex-col gap-4">
         <div className="flex justify-center m-2 select-none">
@@ -22,54 +22,54 @@ const Databar = ({ customClass }) => {
               src={bio.avatar}
               alt="avatar"
               draggable="false"
-              className="max-w-52 rounded-full border-white p-2 border-2 border-dashed w-56"
+              className="max-w-52 rounded-full border-azure-blue p-2 border-2 border-dashed w-56 drop-shadow-2xl"
             />
           </div>
         </div>
-        <div className="flex flex-col items-center">
-          <p className="text-white text-xl">{bio.name}</p>
+        <div className="flex flex-col items-center text-center">
+          <p className="text-black text-xl">{bio.name}</p>
           <p>{bio.role}</p>
           <span className="inline-flex gap-1 items-center">
             <GoLocation className="text-sm" />
             {bio.location}
           </span>
-          <span className="bg-selective-yellow text-rich-black font-semibold rounded-full text-sm mt-1 px-3 select-none">
+          <span className="bg-azure-blue text-gray-blue font-semibold rounded-full text-sm mt-1 px-3 select-none">
             {bio.tag}
           </span>
         </div>
-        <div className="flex gap-4 justify-center text-gray-200">
+        <div className="flex gap-4 justify-center text-gray-600">
           <a
             href={bio.links.linkedin}
             target="_blank"
             referrerPolicy="no-referrer"
           >
-            <AiFillLinkedin className="text-2xl hover:text-white" />
+            <AiFillLinkedin className="text-2xl hover:text-black" />
           </a>
           <a
             href={bio.links.github}
             target="_blank"
             referrerPolicy="no-referrer"
           >
-            <AiFillGithub className="text-2xl hover:text-white" />
+            <AiFillGithub className="text-2xl hover:text-black" />
           </a>
           <a
             href={bio.links.medium}
             target="_blank"
             referrerPolicy="no-referrer"
           >
-            <BsMedium className="text-2xl hover:text-white" />
+            <BsMedium className="text-2xl hover:text-black" />
           </a>
           <a href={`mailto:${bio.email}`}>
-            <AiFillMail className="text-2xl hover:text-white" />
+            <AiFillMail className="text-2xl hover:text-black" />
           </a>
           <a href={`tel:${bio.phone}`}>
-            <AiFillPhone className="text-2xl hover:text-white" />
+            <AiFillPhone className="text-2xl hover:text-black" />
           </a>
         </div>
       </div>
       <button
         type="button"
-        className="bg-selective-yellow w-full sm:mx-2 select-none text-rich-black font-extrabold px-2 py-4 rounded-lg flex justify-center items-center gap-1"
+        className="bg-azure-blue w-full sm:mx-2 select-none text-gray-blue font-extrabold px-2 py-3 rounded-lg flex justify-center items-center gap-1"
         onClick={() => window.open(bio.resumeLink)}
       >
         <AiOutlineCloudDownload className="inline text-2xl" />

@@ -5,9 +5,8 @@ export default {
   theme: {
     extend: {
       colors: {
-        "rich-black": "#011627",
-        "selective-yellow": "#ffba08",
-        cyclamen: "#e86a92",
+        "gray-blue": "#f2f8ff",
+        "azure-blue": "#007fff",
       },
       fontFamily: {
         poppins: ["Poppins", ...defaultTheme.fontFamily.sans],

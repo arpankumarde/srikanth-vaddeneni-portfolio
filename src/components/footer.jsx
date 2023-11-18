@@ -6,7 +6,7 @@ const Footer = () => {
   let year = d.getFullYear();
 
   return (
-    <footer className="border-t-2 border-selective-yellow pt-2 flex justify-between text-white">
+    <footer className="border-t-2 border-azure-blue pt-2 flex justify-between text-black">
       <span className="text-left">
         <a href="https://github.com/arpankumarde">
           &copy; {year} Arpan Kumar De

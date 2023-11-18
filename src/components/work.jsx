@@ -4,12 +4,12 @@ import { bio } from "../data";
 const Work = () => {
   return (
     <section id="work">
-      <h1 className="title text-6xl font-semibold text-white py-2">
+      <h1 className="title text-6xl font-semibold text-black py-2">
         Work Experience
       </h1>
       {bio.work.map((exp, key) => (
-        <div key={key}>
-          <h2 className="text-3xl text-gray-50">{exp.role}</h2>
+        <div key={key} className="pb-4 last:pb-0">
+          <h2 className="text-3xl text-gray-800">{exp.role}</h2>
           <div className="flex items-center gap-2">
             {exp.companyLogo ? (
               <img
@@ -19,7 +19,7 @@ const Work = () => {
                 draggable="false"
               />
             ) : null}
-            <h2 className="text-xl text-gray-200">{exp.company}</h2>
+            <h2 className="text-xl text-gray-600">{exp.company}</h2>
           </div>
           <p className="text-base">
             {exp.from} - {exp.to}

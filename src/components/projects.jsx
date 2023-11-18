@@ -6,7 +6,7 @@ import { FiExternalLink } from "react-icons/fi";
 const Projects = () => {
   return (
     <section id="projects">
-      <h1 className="title text-6xl font-semibold text-white py-2">Projects</h1>
+      <h1 className="title text-6xl font-semibold text-black py-2">Projects</h1>
       <div className="flex flex-col gap-8">
         {bio.projects.map((proj, key) => (
           <div
@@ -20,8 +20,8 @@ const Projects = () => {
               draggable="false"
             />
             <div className="flex flex-col gap-4">
-              <h2 className="text-3xl text-gray-50">{proj.title}</h2>
-              <div className="text text-gray-200">
+              <h2 className="text-3xl text-gray-800">{proj.title}</h2>
+              <div className="text text-gray-600">
                 {proj.description.map((desc, key2) => (
                   <div className="flex gap-2" key={key2}>
                     <span className="font-bold">{">>"}</span>
@@ -36,7 +36,7 @@ const Projects = () => {
                     target="_blank"
                     referrerPolicy="no-referrer"
                   >
-                    <FaGithub className="text-3xl text-gray-200 hover:text-white" />
+                    <FaGithub className="text-3xl text-gray-600 hover:text-black" />
                   </a>
                 ) : (
                   ""
@@ -47,7 +47,7 @@ const Projects = () => {
                     target="_blank"
                     referrerPolicy="no-referrer"
                   >
-                    <FiExternalLink className="text-3xl text-gray-200 hover:text-white" />
+                    <FiExternalLink className="text-3xl text-gray-600 hover:text-black" />
                   </a>
                 ) : (
                   ""

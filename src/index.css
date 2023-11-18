@@ -19,16 +19,16 @@
 .link-underline {
   border-bottom-width: 0;
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#fff, #fff);
+    linear-gradient(#000, #000);
   background-size: 0 2px;
   background-position: 0 100%;
   background-repeat: no-repeat;
   transition: background-size 0.5s ease-in-out;
 }
 
-.link-underline-black {
+.link-underline-azure-blue {
   background-image: linear-gradient(transparent, transparent),
-    linear-gradient(#0369a1, #0369a1);
+    linear-gradient(#007fff, #007fff);
 }
 
 .link-underline:hover {
@@ -37,6 +37,6 @@
 }
 
 *::selection {
-  @apply bg-selective-yellow;
-  @apply text-rich-black;
+  @apply bg-azure-blue;
+  @apply text-gray-blue;
 }

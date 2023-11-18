@@ -10,34 +10,34 @@ const Navbar = () => {
   };
 
   return (
-    <nav className="my-2 pb-3 sm:pb-0 sm:px-2 flex items-center select-none border-b-2 border-selective-yellow sm:border-none text-gray-200">
-      <div className="sm:flex justify-center gap-2 sm:gap-4 w-full text-center">
+    <nav className="my-2 pb-3 sm:pb-0 sm:px-2 flex items-center select-none border-b-2 border-azure-blue sm:border-none text-gray-600">
+      <div className="sm:flex flex-wrap justify-center gap-2 sm:gap-4 w-full text-center">
         <button
-          className="hover:text-white px-4 py-2"
+          className="hover:text-black px-4 py-2 link-underline link-underline-azure-blue"
           onClick={() => handleClickScroll("about")}
         >
           About
         </button>
         <button
-          className="hover:text-white px-4 py-2"
+          className="hover:text-black px-4 py-2 link-underline link-underline-azure-blue"
           onClick={() => handleClickScroll("work")}
         >
           Experience
         </button>
         <button
-          className="hover:text-white px-4 py-2"
+          className="hover:text-black px-4 py-2 link-underline link-underline-azure-blue"
           onClick={() => handleClickScroll("projects")}
         >
           Projects
         </button>
         <button
-          className="hover:text-white px-4 py-2"
+          className="hover:text-black px-4 py-2 link-underline link-underline-azure-blue"
           onClick={() => handleClickScroll("coursework")}
         >
           Coursework
         </button>
         <button
-          className="hover:text-white px-4 py-2"
+          className="hover:text-black px-4 py-2 link-underline link-underline-azure-blue"
           onClick={() => handleClickScroll("education")}
         >
           Education
